@@ -7,7 +7,7 @@
 
 (defn solve-first-problem [file-path]
   (->> file-path
-       core/file->list
+       core/file->number-list
        sum-all-frequencies))
 
 (defn find-repeated-frequency [original-list]
@@ -27,6 +27,6 @@
 
 (defn solve-second-problem [file-path]
   (->> file-path
-       core/file->list
+       core/file->number-list
        find-repeated-frequency))
 

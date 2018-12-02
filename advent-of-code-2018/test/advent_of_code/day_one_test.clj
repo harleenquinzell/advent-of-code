@@ -1,18 +1,18 @@
 (ns advent-of-code.day-one-test
   (:require [advent-of-code.day-one :refer :all]
-            [clojure.test :refer :all]))
+            [clojure.test :as t]))
 
-(def input "./src/advent_of_code/input/day_one_input.txt")
-(def data "./src/advent_of_code/input/day_one_data")
-(def second-input "./src/advent_of_code/input/day_one_test.txt")
-(def third-input "./src/advent_of_code/input/day_one_test2.txt")
+  (def input "./test/advent_of_code/input/day_one_input.txt")
+  (def data "./test/advent_of_code/input/day_one_data")
+  (def second-input "./test/advent_of_code/input/day_one_test.txt")
+  (def third-input "./test/advent_of_code/input/day_one_test2.txt")
 
-(deftest day-one-test
-  (testing "First Solution"
-    (is (= 538 (solve-first-problem input)))
-    (is (= 416 (solve-first-problem data))))
+(t/deftest day-one-test
+  (t/testing "First Solution"
+    (t/is (= 538 (solve-first-problem input)))
+    (t/is (= 416 (solve-first-problem data))))
 
-  (testing "Second solution"
-    (is (= 0 (solve-second-problem second-input)))
-    (is (= 10 (solve-second-problem third-input)))
-    (is (= 77271 (solve-second-problem input)))))
+  (t/testing "Second solution"
+    (t/is (= 0 (solve-second-problem second-input)))
+    (t/is (= 10 (solve-second-problem third-input)))
+    (t/is (= 77271 (solve-second-problem input)))))
