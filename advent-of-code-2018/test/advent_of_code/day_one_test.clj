@@ -2,10 +2,10 @@
   (:require [advent-of-code.day-one :refer :all]
             [clojure.test :as t]))
 
-  (def input "./test/advent_of_code/input/day_one_input.txt")
+  (def input "./test/advent_of_code/input/day_one_input")
   (def data "./test/advent_of_code/input/day_one_data")
-  (def second-input "./test/advent_of_code/input/day_one_test.txt")
-  (def third-input "./test/advent_of_code/input/day_one_test2.txt")
+  (def second-input "./test/advent_of_code/input/day_one_test")
+  (def third-input "./test/advent_of_code/input/day_one_test2")
 
 (t/deftest day-one-test
   (t/testing "First Solution"
