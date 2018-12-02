@@ -13,5 +13,5 @@
     (t/is (= 5368 (solve-first-problem day-input))))
 
   (t/testing "Second Solution"
-    (t/is (= 12 (solve-first-problem test-input2)))
-    (t/is (= 5368 (solve-first-problem day-input2)))))
+    (t/is (= "fgij" (solve-second-problem test-input2)))
+    (t/is (= "cvgywxqubnuaefmsljdrpfzyi" (solve-second-problem day-input)))))
