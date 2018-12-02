@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Erika Saadi <erika.saadi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^22.0.4"
+  }
+}
