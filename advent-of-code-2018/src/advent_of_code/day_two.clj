@@ -14,7 +14,7 @@
 
 (defn solve-first-problem [input]
   (->> input
-       core/input->string-list
+       core/parse-input
        (map frequencies)
        (map vals)
        count-2-and-3-occurencies))

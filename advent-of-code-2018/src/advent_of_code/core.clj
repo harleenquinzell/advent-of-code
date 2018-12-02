@@ -1,7 +1,7 @@
 (ns advent-of-code.core
   (:require [clojure.string :as str]))
 
-(defn input->string-list [file-path]
+(defn parse-input [file-path]
   (-> file-path
       slurp
       str/split-lines))
@@ -12,5 +12,5 @@
 
 (defn file->number-list [file-path]
   (->> file-path
-       input->string-list
+       parse-input
        ->numbers))
