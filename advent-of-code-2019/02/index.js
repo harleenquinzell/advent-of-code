@@ -72,7 +72,7 @@ console.log("\x1b[32m%s\x1b[0m",
             resultSecondPart(part1Input));
 
 
-// Testing:
+// Testing -----------------------------------------------------------------------------------
 assert.strictEqual(resultFirstPart("1,0,0,0,99"), "2,0,0,0,99");
 assert.strictEqual(resultFirstPart("2,3,0,3,99"), "2,3,0,6,99");
 assert.strictEqual(resultFirstPart("2,4,4,5,99,0"), "2,4,4,5,99,9801");
